@@ -36,4 +36,4 @@ try:
     for names, values in students.items():
         print(f"{names:<30}{sum(values)/len(values)}")
 except ZeroDivisionError: print("Lo sentimos, usted intentó sacar el promedio de cero notas")
-except Exception as e: print("Lo sentimos, ocurrió un error inesperado")
+except Exception as e: print("Lo sentimos, ocurrió un error inesperado", e)
